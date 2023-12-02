@@ -27,9 +27,10 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="pots.html">Honey Pots</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="nets.html">Honey Nets</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="elementos.html">Elementos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="generaciones.html">Generaciones</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,8 +41,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="page-heading">
-                            <h1>Contact Me</h1>
-                            <span class="subheading">Have questions? I have answers.</span>
+                            <h1>Generaciones</h1>
                         </div>
                     </div>
                 </div>
@@ -52,59 +52,73 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
-                        <div class="my-5">
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <div class="form-floating">
-                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                    <label for="name">Name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email" />
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
-                                    <label for="phone">Phone Number</label>
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                </div>
-                                <div class="form-floating">
-                                    <textarea class="form-control" id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                                </div>
-                                <br />
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        To activate this form, sign up at
-                                        <br />
-                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                                <!-- Submit Button-->
-                                <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Send</button>
-                            </form>
-                        </div>
+                        <p>
+                            En la historia de las Honeynet, se distinguen tres generaciones 
+                            diferenciadas por los métodos de implementación para cumplir con los 
+                            requerimientos anteriormente mencionados:
+                        </p>
+
+                        <h2 class="section-heading">Honeyney de generación 1</h2>
+                        <p>
+                            La primera arquitectura fue desarrollada por el Honeynet Project en 1999. 
+                            Destaca por que el control de datos se logra con una máquina Gateway (llamada firewall) 
+                            y otra máquina de nombre IDS (Intrusion Detection System) es responsable de la captura de datos.
+                        </p>
+
+                        <p>
+                            De manera específica, el control de datos puede funcionar de dos maneras en esta generación. 
+                            Puede ser de tipo connection blocking, si previene conexiones excesivas desde la Honeynet; 
+                            o connection limiting, si limita el ancho de banda por inundaciones de conexiones salientes.
+                        </p>
+
+                        <p>
+                            Por su parte, la captura de datos consiste en un monitoreo de la actividad para saber cómo opera 
+                            el atacante con el fin de reconocer las tácticas que usa. Por ello, se almacena información sobre 
+                            las IP de origen y destino, protocolos y puertos involucrados, logs del sistema operativo, y 
+                            alertas del sistema IDS.
+                        </p>
+
+                        <h2 class="section-heading">Honeyney de generación 2</h2>
+                        <p>
+                            En 2002 el Honeynet Project propuso una nueva generación diferenciada por su mayor interacción con 
+                            el atacante, todo ello en mejora de la calidad de los datos recolectados.
+                        </p>
+                            
+                        <p>
+                            Particularmente, las mejoras en el control de datos incluyen una mejora en el ocultamiento de la 
+                            Honeynet al utilizar un Gateway de capa 2 transparente, lo cual lo hacía más difícil de detectar. 
+                            Adicionalmente, se agregó un sistema de detección de intrusos NIPS que analiza en tiempo real los 
+                            paquetes con el fin de bloquearlos o neutralizarlos.
+                        </p>
+                        
+                        <p>
+                            Con respecto a la captura de datos, las Honeynet de generación II recolectan información del 
+                            firewall, del IDS y de los Honeypots. De tal forma, los logs del firewall informan sobre el 
+                            tráfico de las conexiones, mientras que las alertas del IDS notifican sobre patrones de ataques 
+                            conocidos, y finalmente los logs del Honeypot ofrecen un panorama más amplio de toda actividad.
+                        </p>
+
+                        <h2 class="section-heading">Honeyney de generación 3</h2>
+                        <p>
+                            Difundida a inicios del 2005, esta generación ofrece mejoras en relación con las versiones de las 
+                            herramientas utilizadas pero su principal diferenciador es el análisis de los datos recogidos, 
+                            esto debido a que la segunda generación tenía dificultades para el análisis.
+                        </p>
+
+                        <p>
+                            Específicamente, las deficiencias de la segunda generación recaían en que no existía un formato 
+                            definido de recolección, por lo que cada fuente de datos tenía un formato diferente que retrasaba 
+                            la investigación. 
+                        </p>
+
+                        <p>
+                            De tal forma, la generación III unifica todos los datos registrados por cada herramienta de captura. 
+                            Sin embargo, para lograr unificar los formatos algunas herramientas fueron modificadas y actualizadas 
+                            como Sebek y SEC.
+                        </p>
+                        
+                        <!-- Pager-->
+                        <div class="d-flex justify-content-start mb-4"><a class="btn btn-primary text-uppercase" href="#!">← Elementos </a></div>
                     </div>
                 </div>
             </div>

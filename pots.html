@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Clean Blog - Start Bootstrap Theme</title>
+        <title>Honey Pots</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -27,9 +27,10 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="pots.html">Honey Pots</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="nets.html">Honey Nets</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="elementos.html">Elementos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="generaciones.html">Generaciones</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,8 +41,8 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="page-heading">
-                            <h1>About Me</h1>
-                            <span class="subheading">This is what I do.</span>
+                            <h1> HONEY POTS </h1>
+                            <span class="subheading">Seguridad en una red.</span>
                         </div>
                     </div>
                 </div>
@@ -52,9 +53,58 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio, adipisci quas excepturi maxime quae totam ducimus consectetur?</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur magnam, excepturi aliquid ex itaque esse est vero natus quae optio aperiam soluta voluptatibus corporis atque iste neque sit tempora!</p>
+                        <p>Para hacer referencia a las Honeynets, primero es necesario comprender los Honeypots. 
+                            Por ello, se define a un Honeypot (tarro de miel) como un recurso de red vulnerable cuyo 
+                            propósito es ser examinado o comprometido por cualquier atacante, de modo que no resuelven 
+                            fallos de seguridad en la red, sino que su utilidad recae en brindar información sobre los 
+                            posibles atacantes que pudieran comprometer los sistemas reales.
+                        </p>
+                        
+                        <p>Aunque pareciera contraproducente contar con un recurso de red que no corrige fallos de seguridad
+                             e inclusive permite la entrada de ataques a la red, lo cierto es que hay motivos que justifican su 
+                             uso. De tal forma, lo que se busca es contar con vulnerabilidades controladas que presenten 
+                             información engañosa a los atacantes, para descubrir sus acciones y tomar acciones que impidan que 
+                             logre entrar al sistema real.
+                        </p>
+                    
+                        <!-- Divider-->
+                        <hr class="my-4" />
+
+                        <h2 class="section-heading">Características de los Honeypots</h2>
+                        <br>
+                        <ul>
+                            <li>Tienen carácter preventivo ya que no disuadirá a los atacantes.</li>
+                            <li>Son elementos pasivos que permiten detectar la actividad de los atacantes.</li>
+                            <li>Son valiosos para actividades de reacción. Al informar sobre el estado del sistema 
+                                podemos ejecutar comandos que le impidan al atacante el acceso al resto del sistema.</li>
+                        </ul>
+
+                        <!-- Divider-->
+                        <hr class="my-4" />
+
+                        <h2 class="section-heading">Ubicación de los Honeypots</h2>
+                        <br>
+                        <h3 class="post-subtitle">Antes del firewall:</h3>
+                        <p>Permite un acceso directo a los atacantes al no filtrar el tráfico peligroso, por lo que se 
+                            obtienen estadísticas confiables sobre los posibles ataques a la red. Además, se destaca que 
+                            el Honeypot podrá ser atacado sin representar peligro para el resto de la red. No obstante, 
+                            debido a la facilidad para ser atacado, consumirá mucho ancho de banda y espacio en los ficheros 
+                            de log.
+                        </p>
+                        <h3 class="post-subtitle">Detrás del firewall:</h3>
+                        <p>Permite la detección de firewalls mal configurados y máquinas infectadas por virus pero requiere 
+                            uso de firewalls adicionales o sistemas de bloqueo, dado que en esta posición, si el atacante 
+                            logra comprometer el sistema tendrá acceso a la red. Sin embargo, a veces se opta por esta 
+                            posición si se quiere detectar atacantes internos o no se puede utilizar una dirección IP externa 
+                            para el Honeypot.
+                        </p>
+                        <h3 class="post-subtitle">En la zona desmilitarizada:</h3>
+                        <p>Se caracteriza por juntar en el mismo segmento a los servidores de producción con el Honeypot y 
+                            controlar el peligro de su uso por medio de un firewall que lo aísla de la red local.
+                        </p>
+
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="nets.html">Honey Nets →</a></div>
                     </div>
                 </div>
             </div>
