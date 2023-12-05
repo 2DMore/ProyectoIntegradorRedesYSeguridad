@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Generaciones</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="pots.html">Honey Pots</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="nets.html">Honey Nets</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="elementos.html">Elementos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="generaciones.html">Generaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/honey/honeypots1.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Generaciones</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>
+                            En la historia de las Honeynet, se distinguen tres generaciones 
+                            diferenciadas por los métodos de implementación para cumplir con los 
+                            requerimientos anteriormente mencionados:
+                        </p>
+
+                        <h2 class="section-heading">Honeyney de generación 1</h2>
+                        <p>
+                            La primera arquitectura fue desarrollada por el Honeynet Project en 1999. 
+                            Destaca por que el control de datos se logra con una máquina Gateway (llamada firewall) 
+                            y otra máquina de nombre IDS (Intrusion Detection System) es responsable de la captura de datos.
+                        </p>
+
+                        <p>
+                            De manera específica, el control de datos puede funcionar de dos maneras en esta generación. 
+                            Puede ser de tipo connection blocking, si previene conexiones excesivas desde la Honeynet; 
+                            o connection limiting, si limita el ancho de banda por inundaciones de conexiones salientes.
+                        </p>
+
+                        <p>
+                            Por su parte, la captura de datos consiste en un monitoreo de la actividad para saber cómo opera 
+                            el atacante con el fin de reconocer las tácticas que usa. Por ello, se almacena información sobre 
+                            las IP de origen y destino, protocolos y puertos involucrados, logs del sistema operativo, y 
+                            alertas del sistema IDS.
+                        </p>
+
+                        <!-- img -->
+                        <a href="#!"><img class="img-fluid" src="assets/img/honey/honeynet gen 1.jpg" alt="..." /></a>
+                        <span class="caption text-muted">Generación 1</span>
+
+                        <h2 class="section-heading">Honeyney de generación 2</h2>
+                        <p>
+                            En 2002 el Honeynet Project propuso una nueva generación diferenciada por su mayor interacción con 
+                            el atacante, todo ello en mejora de la calidad de los datos recolectados.
+                        </p>
+                            
+                        <p>
+                            Particularmente, las mejoras en el control de datos incluyen una mejora en el ocultamiento de la 
+                            Honeynet al utilizar un Gateway de capa 2 transparente, lo cual lo hacía más difícil de detectar. 
+                            Adicionalmente, se agregó un sistema de detección de intrusos NIPS que analiza en tiempo real los 
+                            paquetes con el fin de bloquearlos o neutralizarlos.
+                        </p>
+                        
+                        <p>
+                            Con respecto a la captura de datos, las Honeynet de generación II recolectan información del 
+                            firewall, del IDS y de los Honeypots. De tal forma, los logs del firewall informan sobre el 
+                            tráfico de las conexiones, mientras que las alertas del IDS notifican sobre patrones de ataques 
+                            conocidos, y finalmente los logs del Honeypot ofrecen un panorama más amplio de toda actividad.
+                        </p>
+
+                        <!-- img -->
+                        <a href="#!"><img class="img-fluid" src="assets/img/honey/honeynet gen 2.jpg" alt="..." /></a>
+                        <span class="caption text-muted">Generación 2</span>
+
+                        <h2 class="section-heading">Honeyney de generación 3</h2>
+                        <p>
+                            Difundida a inicios del 2005, esta generación ofrece mejoras en relación con las versiones de las 
+                            herramientas utilizadas pero su principal diferenciador es el análisis de los datos recogidos, 
+                            esto debido a que la segunda generación tenía dificultades para el análisis.
+                        </p>
+
+                        <p>
+                            Específicamente, las deficiencias de la segunda generación recaían en que no existía un formato 
+                            definido de recolección, por lo que cada fuente de datos tenía un formato diferente que retrasaba 
+                            la investigación. 
+                        </p>
+
+                        <p>
+                            De tal forma, la generación III unifica todos los datos registrados por cada herramienta de captura. 
+                            Sin embargo, para lograr unificar los formatos algunas herramientas fueron modificadas y actualizadas 
+                            como Sebek y SEC.
+                        </p>
+
+                        <!-- img -->
+                        <a href="#!"><img class="img-fluid" src="assets/img/honey/honeynet gen 3.png" alt="..." /></a>
+                        <span class="caption text-muted">Generación 3</span>
+                        
+                        <!-- Pager-->
+                        <div class="d-flex justify-content-start mb-4"><a class="btn btn-primary text-uppercase" href="elementos.html">← Elementos </a></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <!-- Divider-->
+        <hr class="my-4" />
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
