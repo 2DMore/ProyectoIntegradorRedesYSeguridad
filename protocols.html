@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Protocolos </title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="tuneling.html">Tunneling</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="security.html">Seguridad</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="protocols.html">Protocolos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="iotTuneling.html">IotTunneling</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/VPN_tunnel_hero.webp')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1> Protocolos
+                            </h1>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Los protocolos de red son conjuntos de reglas y convenciones que gobiernan la comunicación entre dispositivos en una red. Estos protocolos establecen estándares para el intercambio de datos, garantizando que los dispositivos puedan entenderse y colaborar de manera efectiva. En el ámbito de la seguridad de la red, los protocolos desempeñan un papel crucial al proporcionar mecanismos para proteger la confidencialidad, integridad y autenticidad de la información transmitida.
+                        </p>
+                
+                        <!-- Divider-->
+                        <hr class="my-4" />
+                        <h2 class="section-heading">IPsec (IP Security)</h2>
+                        <p>
+                            IPsec es un conjunto de protocolos que proporciona seguridad a nivel de red para la transmisión de datos. Se utiliza comúnmente en la implementación de VPNs y otras redes seguras.
+                        </p>
+                     
+                        <ul>
+                            <li>Modos de Funcionamiento: IPsec opera en dos modos: Modo Transporte, donde solo los datos se cifran, y Modo Túnel, donde todo el paquete se cifra y se encapsula.</li>
+                            <li>Autenticación: Proporciona mecanismos de autenticación para verificar la identidad de los extremos de la comunicación.</li>
+                            <li>Cifrado: Utiliza algoritmos de cifrado para proteger la confidencialidad de los datos transmitidos.</li>
+                        </ul>
+                        <a href="#!"><img class="img-fluid" src="assets/img/ipsec.webp" alt="..." /></a>
+                        <span class="caption text-muted">Imagen ilustrativa</span>
+
+                         <!-- Divider-->
+                         <hr class="my-4" />
+                         <h2 class="section-heading">L2TP (Layer 2 Tunneling Protocol)</h2>
+                         <p>
+                            L2TP es un protocolo de tunelización que permite la creación de túneles para la transmisión de datos a través de redes IP. A menudo se combina con IPsec para mejorar la seguridad.
+                         </p>
+                      
+                         <ul>
+                             <li>Encapsulación: Permite la encapsulación de diversos protocolos de capa 2, como PPP (Point-to-Point Protocol) y Ethernet.</li>
+                             <li>Autenticación: Puede utilizar mecanismos de autenticación como contraseñas o certificados.</li>
+                             <li>Compatibilidad con NAT: Funciona bien a través de dispositivos de Traducción de Direcciones de Red (NAT)</li>
+                         </ul>
+                         <a href="#!"><img class="img-fluid" src="assets/img/l2tp.png" alt="..." /></a>
+                         <span class="caption text-muted">Imagen ilustrativa</span>
+
+                         <!-- Divider-->
+                         <hr class="my-4" />
+                         <h2 class="section-heading">GRE (Generic Routing Encapsulation)</h2>
+                         <p>
+                            GRE es un protocolo de tunelización que encapsula una amplia gama de protocolos de red, permitiendo la transmisión de datos entre redes heterogéneas.
+                         </p>
+                      
+                         <ul>
+                             <li>Encapsulación Genérica: Puede encapsular diversos protocolos de red, incluidos IPv4, IPv6 y otros protocolos de capa 3.</li>
+                             <li>Simple y Ligero: GRE es simple y tiene una sobrecarga mínima, lo que lo hace adecuado para diversas aplicaciones.</li>
+                             <li>GRE se utiliza en situaciones donde se necesita una conexión directa entre dos puntos, como conexiones entre sucursales.</li>
+                         </ul>
+                         <a href="#!"><img class="img-fluid" src="assets/img/gre.png" alt="..." /></a>
+                         <span class="caption text-muted">Imagen ilustrativa</span>
+                         <div class="d-flex justify-content-between mb-4"><a class="btn btn-primary text-uppercase" href="tuneling.html">← Tunneling</a> <a class="btn btn-primary text-uppercase" href="security.html">Seguridad →</a></div>
+                        </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <!-- Divider-->
+        <hr class="my-4" />
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
